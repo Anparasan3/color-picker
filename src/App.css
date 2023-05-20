@@ -51,6 +51,11 @@
   --blue-color: #535bf2;
 }
 
+/** default browser colot picker id*/
+#color-wheel {
+  margin-left: 20px;
+}
+
 .App {
   display: flex;
   flex-direction: row;

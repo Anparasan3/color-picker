@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import FileUpload from "./components/FileUpload"
 import { hexToRgbA } from "./utils/custom-functions"
+import PickerComponent from './components/PickerComponent'
+
 
 interface SelectedFile {
 
@@ -32,7 +34,10 @@ const App: React.FC = () => {
     <div className="App">
       <div className='left-side-container'>
         <div className='left-side-content'>
-          <button id='btn' onClick={handleBtnClick}>Click to take dropper</button>
+          <div style={{ display: "flex", gap: ".2rem", flexDirection: "row", alignItems: "center" }}>
+            <button id='btn' onClick={handleBtnClick}>Click to take dropper</button>
+            <PickerComponent />
+          </div>
           <div>
             <h4>Selected Hex color code</h4>
             {colors.map((col: any) => {
