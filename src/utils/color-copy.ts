@@ -14,12 +14,13 @@ function getBackgroundHexValue(rgbValue: string) {
 }
 
 export function clickDisplayCopied(event: React.ChangeEvent<HTMLInputElement>) {
-  let columnClicked = event.target.parentElement.style.background;
-  getBackgroundHexValue(columnClicked);
-  let n = event.target.children[0];
-  n.style.display = "block";
-  n.innerHTML = "Hex Value Copied!";
-  setTimeout(function () {
-    n.style.display = "none";
-  }, 700);
+  /* TODO: need to work copy */
+  // let columnClicked = event.target.parentElement.style.background;
+  // getBackgroundHexValue(columnClicked);
+  // let n = event.target.children[0];
+  // n.style.display = "block";
+  // n.innerHTML = "Hex Value Copied!";
+  // setTimeout(function () {
+  //   n.style.display = "none";
+  // }, 700);
 }
